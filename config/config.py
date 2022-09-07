@@ -17,14 +17,14 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "9818470"))
+API_HASH = getenv("API_HASH", "3dbdd7dbb34c66e6d17405802e10b3a2")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "2031768448:AAGc9L7SCXE8TMyCUsC9sXsg0_tXCSzvfD0")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://codexun:TeamCodexun07@codexun.egmx5.mongodb.net/?retryWrites=true&w=majority")
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
@@ -37,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001505526419"))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Broken Music")
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "2056407064").split())
 )  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
@@ -65,10 +65,10 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", None
+    "SUPPORT_CHANNEL", "t.me/TeamCodexun"
 )  # Example:- https://t.me/TheYukki
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", None
+    "SUPPORT_GROUP", "t.me/Codexun"
 )  # Example:- https://t.me/YukkiSupport
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
@@ -135,7 +135,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BAARdPSJWlLXiyFualIxpElstd28NVixqu5d9SXgkVoAmt50zKAq4sPJsxzvZZXZpt3tWLhvzcDEuRDdyZ9c8IuMo1dPvyu79SSey1e1eXqtXd1gSx2eFXRayHY_pl3Uo9QlZpZkaSZX0gaDOQOUdznKWrG7_b2XGEXnqyRbg9yUb0w6hRYygKrstQ6_i0eB81ADH63RspqazINkeyXE2Mv23JGN7RT4pUIveV_cNhN2isEHVsMIttraFvma6V51DTjJW91-cKmcSLxy2aygqjb2vRVtU5ahvZdTXjrjLb8FbWBRqCJRLU3SqmDlIKNffiX3stbZ4zsZR3yIvNHYLYfoAAAAAU7bJJIA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
